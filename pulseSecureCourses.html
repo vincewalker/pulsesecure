@@ -29,38 +29,35 @@
 
 	function getHtml(data) {
 
+		var selectStyle = 'style="background: #5ebb46; color: #FFF; padding: 2px 10px; border: 1px solid #ccc; font-size: 16px; width: 155px; height: 30px; margin-right: 15px;"';
 		var thStyle = 'style="background: #243569; color: #fff; font-family: Open Sans,Arial,Helvetica,sans-serif; font-weight: 600; padding: 15px 20px; font-size: 100%; text-align: center; border-top: none; border-left: none; border-bottom: none; border-right: 1px solid #fff;"';
 		var tdStyle = 'style="padding: 15px 20px; vertical-align: top; border: 1px solid #6b6c6e;"';
 
 	    var html = '';
         html += '<h2 style="text-align: center; padding:0px; margin:0px;"><strong>Training Schedule</strong></h2>';
 		html += '<div class="kmdg-resource-center resource--landing-page" style="padding:0px; margin:15px 0px 0px 0px;">';
-		html += '<div class="resource--channel" style="padding:0px; margin:0px;">';
-		html += '<div class="resource--search resource--search__events" data-scroll="search" style="padding:0px; margin:0px;">';
 		html += '<div class="resource--search-filters" style="padding:0px; margin:0px;">';
 		html += '<form class="resource--search-form">';
 	    html += '<div class="resource--filters" style="padding:0px; margin:15px 15px 0px 15px;">';
     	html += '<p class="resource--filter-text"><b>Filter:</b></p>';
-        html += '<div class="resource--fliter resource--filter__resource-type">';
-        html += '<select id="pulse-course-month-select" class="pulse-course-filter" style="width:155px"></select>';
+        html += '<div>';
+        html += '<select id="pulse-course-month-select" class="pulse-course-filter" ' + selectStyle + '></select>';
     	html += '</div>';
-        html += '<div class="resource--fliter resource--filter__resource-type">';
-        html += '<select id="pulse-course-course-select" class="pulse-course-filter" style="width:155px"></select>';
+        html += '<div>';
+        html += '<select id="pulse-course-course-select" class="pulse-course-filter" ' + selectStyle + '></select>';
     	html += '</div>';
-        html += '<div class="resource--fliter resource--filter__resource-type">';
-        html += '<select id="pulse-course-provider-select" class="pulse-course-filter" style="width:155px"></select>';
+        html += '<div>';
+        html += '<select id="pulse-course-provider-select" class="pulse-course-filter" ' + selectStyle + '></select>';
     	html += '</div>';
-        html += '<div class="resource--fliter resource--filter__resource-type">';
-        html += '<select id="pulse-course-country-select" class="pulse-course-filter" style="width:155px"></select>';
+        html += '<div>';
+        html += '<select id="pulse-course-country-select" class="pulse-course-filter" ' + selectStyle + '></select>';
     	html += '</div>';
-        html += '<div class="resource--fliter resource--filter__resource-type">';
-        html += '<select id="pulse-course-language-select" class="pulse-course-filter" style="width:155px"></select>';
+        html += '<div>';
+        html += '<select id="pulse-course-language-select" class="pulse-course-filter" ' + selectStyle + '></select>';
     	html += '</div>';
 		html += '<input id="pulse-course-reset-filter" type="button" style="color: #FFF; background: #5ebb46; border: none; cursor: pointer; padding: 2px 10px; height: 30px; width: 70px;" value="Reset"/>';
         html += '</div>';
         html += '</form>';
-    	html += '</div>';
-    	html += '</div>';
 		html += '</div>';
 		html += '</div>';
 		html += '<div class="builder-layout builder-layout-table-content" style="padding:0px;">';
